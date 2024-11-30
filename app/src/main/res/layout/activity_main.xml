@@ -83,6 +83,12 @@
         android:layout_height="wrap_content"
         android:text="Dodaj"
         android:layout_gravity="center"/>
+    <CheckBox
+        android:id="@+id/checkBox_objechane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oznacz jako obejrzane/przeczytane"
+        android:layout_gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

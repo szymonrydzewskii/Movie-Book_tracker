@@ -3,6 +3,7 @@ package com.example.movie_book_tracker
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.SeekBar
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             "Film"
         }
-        val czyObejrzane = false // Możesz dodać pole checkbox, jeśli chcesz to zmieniać
+        val czyObejrzane = findViewById<CheckBox>(R.id.checkBox_objechane).isChecked
 
         if (tytul.isNotEmpty() && gatunek.isNotEmpty() && opis.isNotEmpty()) {
             val newItem = movie_book(tytul, gatunek, opis, ocena, filmCzyKsiazka, czyObejrzane)

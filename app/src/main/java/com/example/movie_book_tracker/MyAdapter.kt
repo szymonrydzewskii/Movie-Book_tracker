@@ -1,5 +1,6 @@
 package com.example.movie_book_tracker
 
+import android.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,6 +31,15 @@ class MyAdapter (private val movieList: List<movie_book>): RecyclerView.Adapter<
         holder.movieOcena.text = "${currentMovie.ocena}/10"
         holder.movieFilmCzyKsiazka.text = currentMovie.filmCzyKsiazka
         holder.movieCzyObejrzane.text = "${currentMovie.czyObejrzane}"
+
+        holder.itemView.setOnClickListener {
+            val dialog = AlertDialog.Builder(it.context)
+                .setTitle(currentMovie.tytul)
+                .setMessage("Gatunek: ${currentMovie.gatunek}\nOpis: ${currentMovie.opis}\nOcena: ${currentMovie.ocena}/10\nCzy obejrzane: ${currentMovie.czyObejrzane}")
+                .setPositiveButton("OK", null)
+                .create()
+            dialog.show()
+        }
     }
 
     override fun getItemCount(): Int = movieList.size
