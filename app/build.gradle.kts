@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.movie_book_tracker"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.movie_book_tracker"
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
