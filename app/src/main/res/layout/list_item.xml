@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    
+    <TextView
+        android:id="@+id/movie_tytul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tytul"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/movie_gatunek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gatunek"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/movie_opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="opis"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/movie_filmCzyKsiazka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="filmCzyKsiazka"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/movie_czyObejrzane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="czy obejrzane"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/movie_ocena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ocena"
+        android:textSize="16sp"/>
+
+
+
+</LinearLayout>
